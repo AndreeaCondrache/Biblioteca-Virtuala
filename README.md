@@ -1,5 +1,5 @@
-##📚 Biblioteca Virtuală
-Descriere:
+#📚 Biblioteca Virtuală
+## Descriere:
 Acest proiect este o aplicație web creată în Angular, dedicată gestionării unei biblioteci online. Aplicația este construită conform celor mai bune practici și include funcționalități precum autentificarea utilizatorilor, protecția rutelor și testarea unităților.
 
 🛠 Funcționalități principale
