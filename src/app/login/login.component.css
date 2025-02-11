@@ -1,0 +1,70 @@
+body {
+    height: 100%; /* Întreaga pagină are înălțimea de 100% */
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    display: flex; /* Împarte pagina în două secțiuni */
+  }
+  
+  .login-container {
+    max-width: 400px;
+    margin: 20px 250px; /* Muta formularul mai la stânga */
+    padding: 20px;
+    border: 1px solid #faf8f8;
+    border-radius: 8px;
+    background-color: #C1E6BA;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+  
+  
+  
+  .login-container h2 {
+    text-align: center;
+    color: #023336; /* Culoare pentru titlu */
+    margin-bottom: 20px;
+  }
+  
+  .login-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #023336; /* Culoare text */
+  }
+  
+  .login-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #4dA674; /* Culoare bordură */
+    border-radius: 4px; /* Colțuri rotunjite */
+    box-sizing: border-box; /* Asigură dimensiune corectă */
+  }
+  
+  .login-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4dA674; /* Verde pentru buton */
+    color: white;
+    border: none;
+    border-radius: 4px; /* Colțuri rotunjite */
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .login-container button:hover {
+    background-color: #023336; /* Schimbă culoarea butonului la hover */
+  }
+  
+  small {
+    color: red;
+  }
+  
+  .login-container .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 50px; /* Mută mesajul la dreapta */
+    text-align: left; /* Aliniază textul la stânga */
+  }
+  

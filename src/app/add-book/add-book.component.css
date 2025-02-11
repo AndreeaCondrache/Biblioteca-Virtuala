@@ -1,0 +1,177 @@
+/* Container principal */
+.add-book-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  /* Titlu */
+  .add-book-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Formular */
+  .add-book-form {
+    width: 100%;
+  }
+  
+  /* Grup formular */
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  /* Etichete */
+  .form-group label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  /* Inputuri și select */
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+  }
+  
+
+  /* Imagine preview */
+  .preview-image img {
+    margin-top: 10px;
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  /* Rating */
+  .rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .stars {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .fa {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .fa-star {
+    color: #ffcc00;
+  }
+  
+  .fa-star-o {
+    color: #ccc;
+  }
+  
+  .rating-stars {
+    display: flex;
+    justify-content: start;
+    gap: 5px;
+    font-size: 24px;
+    color: #ccc; /* Culoare implicită */
+    cursor: pointer;
+  }
+  
+  .rating-stars .star.filled {
+    color: #ffc107; /* Culoare pentru stelele selectate */
+  }
+  
+  .rating-stars .star:hover,
+  .rating-stars .star:hover ~ .star {
+    color: #ffca2c; /* Efect de hover */
+  }
+  
+  .add-book-button {
+    background-color: #28a745; /* Verde pentru confirmare */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-book-button:hover {
+    background-color: #218838; /* Culoare mai închisă pentru hover */
+  }
+  
+  .add-book-button:active {
+    background-color: #1e7e34; /* Culoare la click */
+  }
+
+  /* Pentru centrare globală a rating-ului și butonului */
+.centered {
+    display: flex;
+    flex-direction: column; /* Elemente unul sub altul */
+    align-items: center;    /* Centrează pe orizontală */
+    margin-top: 20px;
+  }
+  
+  /* Stilizarea stelelor de rating */
+  .rating-stars {
+    display: flex;
+    justify-content: center; /* Centrează stelele pe orizontală */
+    margin: 10px 0;          /* Spațiu între stele și alte elemente */
+  }
+  
+  .star {
+    font-size: 24px;         /* Mărimea stelei */
+    color: #d3d3d3;         /* Gri deschis pentru stelele necompletate */
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .star.filled {
+    color: #ffc107;         /* Galben pentru stelele selectate */
+  }
+  
+  .star:hover {
+    color: #ffcc00;         /* Galben deschis la hover */
+  }
+  
+  /* Butonul de adăugare */
+  .add-book-button {
+    background-color: #28a745; /* Verde pentru confirmare */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-book-button:hover {
+    background-color: #218838; /* Culoare mai închisă la hover */
+  }
+  
+  .add-book-button:active {
+    background-color: #1e7e34; /* Culoare la click */
+  }
+  

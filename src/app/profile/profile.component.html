@@ -1,0 +1,14 @@
+<div class="profile-container">
+    <!-- Poza utilizatorului -->
+    <div class="profile">
+      <div class="profile-image">
+        <img [src]="user.profileImage" alt="Profile Image" />
+      </div>
+  
+      <!-- Datele utilizatorului -->
+      <h2>{{ user.firstName }} {{ user.lastName }}</h2>
+      <p><span>Email:</span> {{ user.email }}</p>
+      <p><span>Data înregistrării:</span> {{ user.registrationDate }}</p>
+    </div>
+  </div>
+  

@@ -1,0 +1,42 @@
+<div 
+  class="background-container" 
+  style="
+    background-image: url('assets/img/books.jpg');  
+    background-size: cover;  /* Face ca imaginea să acopere întregul container */
+     height: 100vh; /* Asigură-te că containerul are înălțimea completă a ferestrei vizibile */
+     margin: 0;  /* Elimină marginea */
+    padding: 0; /* Elimină paddingul */
+    display: flex; /* Folosește flexbox pentru a alinia conținutul */
+    flex-direction: column; /* Aliniază elementele pe verticală */
+    justify-content: center; /* Centrează formularul pe verticală */
+    max-width: 1400px; /* Limitează lățimea maximă a containerului */"  
+>
+<div class="login-container">
+  <h2>Autentificare</h2>
+  <form (ngSubmit)="login()">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        [(ngModel)]="email"
+        name="email"
+        required
+        placeholder="Introduceți emailul"
+      />
+    </div>
+    <div class="form-group">
+      <label for="password">Parolă:</label>
+      <input
+        type="password"
+        id="password"
+        [(ngModel)]="password"
+        name="password"
+        required
+        placeholder="Introduceți parola"
+      />
+    </div>
+    <button type="submit">Login</button>
+    <div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+  </form>
+</div>

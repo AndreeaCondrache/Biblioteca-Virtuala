@@ -1,0 +1,94 @@
+<div class="add-book-container">
+    <h2>Adaugă o carte nouă</h2>
+    <form (ngSubmit)="addBook()" class="add-book-form">
+      <!-- Poza cărții -->
+      <div class="form-group">
+        <label for="book-image">Imaginea cărții:</label>
+        <input type="file" id="book-image" (change)="onImageUpload($event)" />
+        <div class="preview-image" *ngIf="bookImage">
+          <img [src]="bookImage" alt="Preview" />
+        </div>
+      </div>
+  
+      <!-- Numele cărții -->
+      <div class="form-group">
+        <label for="book-name">Numele cărții:</label>
+        <input
+          type="text"
+          id="book-name"
+          [(ngModel)]="book.name"
+          name="bookName"
+          required
+          placeholder="Introduceți numele cărții"
+        />
+      </div>
+  
+      <!-- Autorul -->
+      <div class="form-group">
+        <label for="author">Autorul:</label>
+        <input
+          type="text"
+          id="author"
+          [(ngModel)]="book.author"
+          name="author"
+          required
+          placeholder="Introduceți autorul"
+        />
+      </div>
+  
+      <!-- Anul publicării -->
+      <div class="form-group">
+        <label for="publication-year">Anul publicării:</label>
+        <input
+          type="number"
+          id="publication-year"
+          [(ngModel)]="book.year"
+          name="year"
+          required
+          placeholder="Introduceți anul publicării"
+          min="1000"
+          max="{{ currentYear }}"
+        />
+      </div>
+  
+      <!-- Genul cărții -->
+      <div class="form-group">
+        <label for="genre">Genul cărții:</label>
+        <select id="genre" [(ngModel)]="book.genre" name="genre" required>
+          <option value="" disabled selected>Selectați genul</option>
+          <option *ngFor="let genre of genres" [value]="genre">{{ genre }}</option>
+        </select>
+      </div>
+  
+      <!-- Data adăugării -->
+      <div class="form-group">
+        <label for="added-date">Data adăugării:</label>
+        <input
+          type="date"
+          id="added-date"
+          [(ngModel)]="book.addedDate"
+          name="addedDate"
+          required
+          placeholder="Selectați data"
+        />
+      </div>
+  
+      <div class="form-group centered">
+        <label for="rating">Rating:</label>
+        <div class="rating-stars">
+          <span
+            *ngFor="let star of [1, 2, 3, 4, 5]; let i = index"
+            class="star"
+            [class.filled]="i < book.rating"
+            (click)="setRating(i + 1)"
+          >
+            ★
+          </span>
+        </div>
+      </div>
+      
+      <!-- Buton pentru adăugarea cărții -->
+      <div class="form-group centered">
+        <button type="submit" class="add-book-button">Adaugă cartea</button>
+      </div>
+      

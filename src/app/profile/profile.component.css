@@ -1,0 +1,51 @@
+/* Containerul general */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh; /* Înălțimea paginii */
+   
+    text-align: center;
+    background-color: #3d1e02; /* Fundal pentru informații */
+    padding: 20px;
+  }
+
+  .profile {
+    background-color: #ebebee; /* Fundal deschis */
+    color: white; /* Text alb pentru contrast */
+    padding: 20px; /* Spațiere internă */
+    border-radius: 15px; /* Colțuri rotunjite */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Umbră pentru un efect 3D */
+    width: 80%; /* Dimensiune responsivă */
+    max-width: 350px; /* Lățime maximă */
+    text-align: center; /* Aliniere la centru */
+  }
+  
+  /* Stilizare imagine de profil */
+  .profile-image img {
+    padding: 20px; /* Spațiere internă */
+    width: 150px; /* Dimensiune */
+    height: 150px; /* Dimensiune */
+    border-radius: 50%; /* Transformă într-un cerc */
+    object-fit: cover; /* Taie imaginea dacă este necesar */
+   /* border: 4px solid #33cc99;  Bordură */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Umbră */
+  }
+  
+  /* Numele utilizatorului */
+  h2 {
+    font-size: 24px;
+    color: #000000; /* Text albastru închis */
+    margin: 15px 0;
+    padding: 8px; /* Spațiere internă */
+  }
+  
+  /* Datele utilizatorului */
+  p {
+    font-size: 16px;
+    color: #000000; /* Text gri */
+    margin: 5px 0;
+    padding: 8px; /* Spațiere internă */
+  }
+  

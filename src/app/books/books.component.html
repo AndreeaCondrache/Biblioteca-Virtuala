@@ -1,0 +1,39 @@
+
+<div class="page-container">
+  <div class="sidebar">
+    <h2>Meniu</h2>
+    <ul>
+      <li>
+        <a routerLink="/profile"><i class="fas fa-user"></i> Profil utilizator</a>
+      </li>
+      <li>
+        <a routerLink="/my-library">
+          <i class="fas fa-book"></i> Biblioteca mea
+        </a>
+      </li>
+      <li>
+        <a routerLink="/add-book">
+          <i class="fas fa-book-medical"></i> Adaugă carte
+        </a>
+      </li>
+      <li>
+        <a routerLink="/delete-book">
+          <i class="fas fa-trash"></i> Șterge carte
+        </a>
+      </li>
+      <li>
+        <a routerLink="/recent">
+          <i class="fas fa-clock"></i> Cărți recente
+        </a>
+      </li>
+      <li><button (click)="logout()"><i class="fa fa-sign-out"></i>
+         Deconectează-te</button></li> <!-- Buton de deconectare -->
+
+    </ul>
+  </div>
+  <div class="main-content">
+    <h1>Biblioteca Mea Virtuală</h1>
+    <img class="banner-image" src="assets/img/kk.jpg" alt="Biblioteca Virtuală" />
+    <router-outlet></router-outlet>
+  </div>
+</div>
