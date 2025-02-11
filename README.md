@@ -1,13 +1,13 @@
-#📚 Biblioteca Virtuală
+# 📚 Biblioteca Virtuală
 ## Descriere:
 Acest proiect este o aplicație web creată în Angular, dedicată gestionării unei biblioteci online. Aplicația este construită conform celor mai bune practici și include funcționalități precum autentificarea utilizatorilor, protecția rutelor și testarea unităților.
 
-🛠 Funcționalități principale
-✅ Autentificare utilizatori
+## 🛠 Funcționalități principale
+- ✅ Autentificare utilizatori
 
 Utilizatorii se pot autentifica folosind email și parolă
 Protecție pentru anumite rute utilizând AuthGuard
-✅ Gestionarea cărților
+- ✅ Gestionarea cărților
 
 Vizualizarea listei de cărți disponibile
 Adăugarea, editarea sau ștergerea cărților (pentru utilizatorii cu roluri speciale)
