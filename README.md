@@ -24,7 +24,7 @@ Accesarea istoricului cărților recente
 - 🔹 Local Storage – Stocarea locală a token-ului de autentificare
 
 
-##📂 Structura Proiectului
+## 📂 Structura Proiectului
 📁 src/app/components/
 
 - 🏠 login/ - Componenta pentru autentificare
